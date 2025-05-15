@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+    <style>
+        /* Basic styling for clarity */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header, main, section, footer {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #styleDiv {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            margin-top: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        #itemList {
+            list-style: disc inside;
+        }
+        #itemList li {
+            background-color: #e9e9e9;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Basic DOM Manipulation Assignment</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Changing Text Content</h2>
+            <p id="myParagraph">This is the initial text content of the paragraph.</p>
+            <button id="changeTextBtn">Change Paragraph Text</button>
+        </section>
+
+        <section>
+            <h2>Modifying CSS Styles</h2>
+            <div id="styleDiv">Style Me!</div>
+            <button id="changeStyleBtn">Change Box Style</button>
+        </section>
+
+        <section>
+            <h2>Adding and Removing Elements</h2>
+            <ul id="itemList">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <button id="addItemBtn">Add New Item</button>
+            <button id="removeItemBtn">Remove Last Item</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dynamic DOM Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
